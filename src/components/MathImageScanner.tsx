@@ -217,6 +217,9 @@ const MathImageScanner: React.FC<MathImageScannerProps> = ({
     }
   };
 
+  console.log("Questions to upload",questions);
+  console.log("Added Questions",addedQuestions);
+
   const canSubmitQuiz = (): boolean => {
     return questions.length > 0 && 
            Object.keys(selectedAnswers).length === questions.length;

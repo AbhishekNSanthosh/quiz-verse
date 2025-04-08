@@ -505,7 +505,7 @@ const TakeQuiz = () => {
               <Card key={question.id} className="border-l-4 border-l-primary">
                 <CardHeader>
                   <CardTitle className="text-lg">
-                    <MathJax>
+                    <MathJax dynamic>
                       {`${index + 1}. ${question.question_text}`}
                     </MathJax>
                   </CardTitle>
